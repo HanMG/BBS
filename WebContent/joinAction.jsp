@@ -40,7 +40,7 @@
 		} else {
 			UserDAO userDAO = new UserDAO();
 			int result = userDAO.join(user);
-			if (result == 0) {
+			if (result == 1) {
 				session.setAttribute("userID", user.getUserID());
 				PrintWriter script = response.getWriter();
 				script.println("<script>");
